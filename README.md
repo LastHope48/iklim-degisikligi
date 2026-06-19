@@ -1,4 +1,4 @@
-# iklim-degisikligi
+# İklim değişikliği
 ## Kodland Python Pro Mezuniyet Projesi
 
 ## Yapacağım proje türü:
