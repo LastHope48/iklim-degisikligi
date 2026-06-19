@@ -1,5 +1,5 @@
 # iklim-degisikligi
-Kodland Python Pro Mezuniyet Projesi
+## Kodland Python Pro Mezuniyet Projesi
 
 ## Yapacağım proje türü:
 Website, bilgi ve iklime ne kadar zarar verdiğimizi ölçebileceğimiz bir test ve yapabilirsem bir oyun
