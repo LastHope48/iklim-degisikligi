@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #d9f7be, #b7eb8f);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+form {
+  width: 100%;
+  max-width: 700px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0, 100, 0, 0.15);
+}
+
+form::before {
+  content: "🌍 Karbon Ayak İzi Hesaplayıcısı";
+  display: block;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  color: #2e7d32;
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #1b5e20;
+  font-weight: bold;
+}
+
+select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #81c784;
+  border-radius: 10px;
+  font-size: 16px;
+  background: #f8fff8;
+  transition: .2s;
+}
+
+select:focus {
+  outline: none;
+  border-color: #2e7d32;
+  box-shadow: 0 0 8px rgba(46, 125, 50, .3);
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #43a047, #2e7d32);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .25s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(46, 125, 50, .35);
+}
+
+#sonuc {
+  margin-top: 30px;
+  color: #1b5e20;
+  text-align: center;
+  font-size: 28px;
+}
+
+#bar {
+  width: 100%;
+  max-width: 700px;
+  height: 28px;
+  margin-top: 15px;
+  accent-color: #2e7d32;
+}

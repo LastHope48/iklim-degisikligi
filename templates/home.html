@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>İklim Değişikliği - Ana Sayfa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Birthstone&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../static/css/home.css" />
+    <link
+      rel="icon"
+      href="{{url_for('static', filename='img/climate-change-icon.ico')}}"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- <img src="../static/img/iklim_header.png" alt="iklim_header" /> -->
+      <h1 id="br">İklim Değişikliği</h1>
+    </header>
+    <div class="container">
+      <div class="gorsel-bilgi2" id="gb-1">
+        <img
+          src="../static/img/roszie-climate-change-8405380_1920.png"
+          alt=""
+          class="yan_gorsel1"
+        />
+        <h3>
+          İklim değişikliği, günümüzde dünyanın karşı karşıya olduğu en önemli
+          çevre sorunlarından biridir. İnsan faaliyetleri sonucunda atmosfere
+          salınan karbondioksit ve diğer sera gazları, Güneş'ten gelen ısının
+          bir kısmını atmosferde tutarak Dünya'nın ortalama sıcaklığının
+          artmasına neden olur. Bu durum; kuraklık, aşırı hava olayları,
+          buzulların erimesi, deniz seviyesinin yükselmesi ve birçok bölgenin
+          ikliminin değişmesi gibi önemli sonuçlar doğurur. Bu nedenle iklim
+          değişikliğiyle mücadele etmek hem bireylerin hem de toplumların ortak
+          sorumluluğudur.
+        </h3>
+      </div>
+      <div class="gorsel-bilgi">
+        <img
+          src="../static/img/environment.svg"
+          alt="environment"
+          class="yan_gorsel1"
+        />
+        <h3>
+          Bunu durdurmak için yapabileceklerimiz toplumsal ve bireysel olarak
+          ayrılır, toplumsal yapabileceklerimiz:
+          <ul>
+            <li>
+              Fosil yakıt kullanımını azaltmak. Kömür, petrol ve doğal gaz
+              yerine güneş, rüzgâr, hidroelektrik ve jeotermal gibi
+              yenilenebilir enerji kaynaklarına geçmek.
+            </li>
+            <li>
+              Enerji verimliliğini artırmak. Daha iyi yalıtımlı binalar, verimli
+              cihazlar ve LED aydınlatmalar kullanarak daha az enerji tüketmek.
+            </li>
+            <li>
+              Ulaşımı daha çevreci hale getirmek. Toplu taşıma, bisiklet,
+              yürüyüş ve elektrikli araçları yaygınlaştırmak.
+            </li>
+            <li>
+              Ormanları korumak ve yenilerini oluşturmak. Ağaçlar atmosferdeki
+              karbondioksiti emerek iklim değişikliğiyle mücadeleye katkı
+              sağlar. Mevcut ormanların korunması, yeni ağaç dikmekten bile daha
+              önemlidir.
+            </li>
+            <li>
+              Tarımı daha sürdürülebilir yapmak. Toprağı koruyan yöntemler
+              kullanmak, suyu verimli kullanmak ve gereksiz gübre ile ilaç
+              kullanımını azaltmak.
+            </li>
+            <li>
+              Atıkları azaltmak. Daha az tüketmek, ürünleri yeniden kullanmak ve
+              geri dönüşümü artırmak.
+            </li>
+            <li>
+              Sanayide temiz teknolojilere geçmek. Çelik, çimento ve kimya gibi
+              sektörlerde düşük karbonlu üretim yöntemleri geliştirmek.
+            </li>
+            <li>
+              İklim dostu politikaları desteklemek. Hükûmetlerin temiz enerjiye
+              yatırım yapması ve sera gazı salımlarını azaltan düzenlemeler
+              uygulaması büyük etki sağlar.
+            </li>
+          </ul>
+          <button
+            onclick="window.location.href = '/iyi-kotu-oyun'"
+            class="button"
+          >
+            Oyuna Git!
+          </button>
+        </h3>
+      </div>
+      <div class="game-box">
+        <img src="../static/img/paper_2.jpg" alt="formicon" />
+        <h3>
+          Peki siz iklim değişikliğine ne kadar etki ettiğinizi biliyor musunuz?
+        </h3>
+        <button
+          onclick="window.location.href = '/iklim-degisikligi-form'"
+          class="button"
+        >
+          Forma git!
+        </button>
+      </div>
+      <div class="gorsel-bilgi"></div>
+      <div class="gorsel-bilgi"></div>
+    </div>
+    <script>
+      document
+        .querySelectorAll(".gorsel-bilgi h3, .gorsel-bilgi2 h3")
+        .forEach((el) => {
+          const len = el.textContent.length;
+
+          if (len > 300) el.style.fontSize = "22px";
+          else if (len > 200) el.style.fontSize = "28px";
+          else if (len > 100) el.style.fontSize = "34px";
+          else el.style.fontSize = "40px";
+        });
+    </script>
+  </body>
+</html>

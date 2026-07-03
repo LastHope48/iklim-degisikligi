@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>İklim Değişikliği Oyunu</title>
+    <link
+      rel="icon"
+      href="{{url_for('static', filename='img/climate-change-icon.ico')}}"
+    />
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #dff6ff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .game {
+        width: 700px;
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      }
+
+      h1 {
+        text-align: center;
+        color: #2e7d32;
+      }
+
+      #question {
+        font-size: 22px;
+        margin: 20px 0;
+      }
+
+      button {
+        width: 100%;
+        margin: 8px 0;
+        padding: 15px;
+        font-size: 18px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        background: #4caf50;
+        color: white;
+        transition: 0.3s;
+      }
+
+      button:hover {
+        background: #388e3c;
+      }
+
+      #score {
+        font-size: 20px;
+        margin-top: 20px;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      #result {
+        text-align: center;
+        font-size: 22px;
+        margin-top: 20px;
+      }
+
+      #continue {
+        text-align: center;
+        font-size: 22px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="game">
+      <h1>🌍 İklim Kahramanı</h1>
+
+      <div id="question"></div>
+
+      <div id="answers"></div>
+
+      <div id="score">Puan: 0</div>
+
+      <div id="result"></div>
+      <button id="continue">Devam Et</button>
+    </div>
+    <script src="{{url_for('static', filename='js/gb-game-script.js')}}"></script>
+  </body>
+</html>

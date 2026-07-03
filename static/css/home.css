@@ -1,0 +1,130 @@
+header{
+    height:400px;
+    background:
+        url("../img/iklim_header.png");
+    background-size:cover;
+    background-position:center;
+    color:white;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header h1 {
+    margin: 0;
+    font-size: 120px;
+    color: white;
+    text-align: center;
+}
+
+.yan_gorsel1 {
+    max-width: 600px;
+    margin: 0 20px 20px 20px;
+    display: inline-block;
+}
+
+
+.gorsel-bilgi2 h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline;
+    font-size: 40px;
+    font-weight: 400;
+    margin: 0 0 0 20px;
+}
+
+.gorsel-bilgi h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline;
+    font-size: 40px;
+    font-weight: 400;
+    margin: 0 20px 0 0; 
+}
+
+
+
+#br {
+  font-family: "Birthstone", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    margin: 0px;
+}
+
+.gorsel-bilgi {
+
+    max-height: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 300px 0 0 0;
+    border-top: 2px solid rgba(128, 128, 128, 0.3);
+    border-left: 2px solid gray;
+    border-right: 2px solid gray;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.3);
+    padding: 10px 0 10px 0;
+}
+
+
+.button {
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(150, 150, 150);
+}
+
+.button:hover {
+    background-color: gray;
+    transition: 0.2s;
+}
+
+.gorsel-bilgi2 {
+    max-height: 800px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 300px 0 0 0;
+    border-left: 2px solid gray;
+    border-right: 2px solid gray; 
+    border-bottom: 2px solid rgba(128, 128, 128, 0.3);
+    border-top: 2px solid rgba(128, 128, 128, 0.3);
+    padding: 10px 0 10px 0;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.game-box {
+    width: 50%;
+    max-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.game-box h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.game-box img {
+    max-width: 400px;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+#gb-1 h3 {
+    font-size: 40px !important;
+}
