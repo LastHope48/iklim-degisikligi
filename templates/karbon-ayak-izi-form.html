@@ -8,10 +8,14 @@
       rel="icon"
       href="{{url_for('static', filename='img/climate-change-icon.ico')}}"
     />
-    <link rel="stylesheet" href="../static/css/form.css" />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='css/form.css')}}"
+    />
   </head>
   <body>
     <form id="carbonForm">
+      <h1>🌍 Karbon Ayak İzi Hesaplayıcısı</h1>
       <label for="car">Haftada kaç gün araba kullanıyorsunuz?</label><br />
       <select id="car">
         <option value="0">Hiç</option>
@@ -91,10 +95,16 @@
       <button type="button" onclick="hesapla()">
         Karbon Ayak İzimi Hesapla
       </button>
+      <button
+        type="button"
+        class="returnback"
+        onclick="window.location.href = '/'"
+      >
+        Geri dön
+      </button>
+      <h2 id="sonuc"></h2>
+      <progress id="bar" max="100" value="0"></progress>
     </form>
-
-    <h2 id="sonuc"></h2>
-    <progress id="bar" max="100" value="0"></progress>
-    <script src="../static/js/form-script.js"></script>
+    <script src="{{url_for('static', filename='js/form-script.js')}}"></script>
   </body>
 </html>

@@ -128,3 +128,114 @@ body {
 #gb-1 h3 {
     font-size: 40px !important;
 }
+
+@media screen and (max-width: 375px){
+
+    header{
+        height:170px;
+    }
+
+    header h1{
+        font-size:38px;
+    }
+
+    .gorsel-bilgi,
+    .gorsel-bilgi2{
+        margin-top:35px;
+        padding:15px;
+    }
+
+    .gorsel-bilgi h3,
+    .gorsel-bilgi2 h3{
+        font-size:18px;
+    }
+
+    .game-box h3{
+        font-size:20px;
+    }
+
+    #gb-1 h3{
+        font-size:26px !important;
+    }
+
+    .button{
+        height:45px;
+        font-size:16px;
+    }
+    li {
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 768px) {
+
+    header{
+        height:220px;
+        padding:20px;
+    }
+
+    header h1{
+        font-size:55px;
+        text-align:center;
+    }
+
+    .container{
+        padding:0 15px;
+    }
+
+    .gorsel-bilgi,
+    .gorsel-bilgi2{
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        margin:60px 10px 0;
+        text-align:center;
+        max-height:none;
+        padding:20px;
+    }
+
+    .gorsel-bilgi h3,
+    .gorsel-bilgi2 h3{
+        display:block;
+        font-size:24px;
+        margin:20px 0;
+    }
+
+    .yan_gorsel1{
+        width:100%;
+        max-width:100%;
+        margin:0;
+    }
+
+    .yan_gorsel1 img,
+    .game-box img{
+        width:100%;
+        max-width:100%;
+        height:auto;
+        display:block;
+    }
+
+    .game-box{
+        width:100%;
+        max-height:none;
+        padding:20px 0;
+    }
+
+    .game-box h3{
+        font-size:24px;
+        text-align:center;
+    }
+
+    #gb-1 h3{
+        font-size:32px !important;
+    }
+
+    .button{
+        width:100%;
+        max-width:280px;
+        height:50px;
+        font-size:18px;
+    }
+        li {
+        margin-bottom: 20px;
+    }
+}

@@ -21,10 +21,15 @@ form {
   border-radius: 20px;
   padding: 30px;
   box-shadow: 0 10px 25px rgba(0, 100, 0, 0.15);
+  color: #81c784;
+}
+
+h1 {
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 form::before {
-  content: "🌍 Karbon Ayak İzi Hesaplayıcısı";
   display: block;
   font-size: 28px;
   font-weight: bold;
@@ -88,4 +93,27 @@ button:hover {
   height: 28px;
   margin-top: 15px;
   accent-color: #2e7d32;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.returnback {
+  background: linear-gradient(to right, red, rgb(199, 6, 6));
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 375px) {
+  form {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+  #sonuc {
+    font-size: 20px;
+    margin-top: 20px;
+  }
 }

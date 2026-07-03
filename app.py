@@ -21,6 +21,11 @@ def form():
     return render_template("karbon-ayak-izi-form.html")
 
 
+@app.errorhandler(404)
+def not_found(e):
+    return render_template("404.html")
+
+
 # host'u 0.0.0.0 yaparak uygulamanın çalıştığı internetteki
 # Herkesin erişebilmesini sağlıyoruz
 # debug'ı True yaparak hata ayıklamayı kolaylaştırıyoruz

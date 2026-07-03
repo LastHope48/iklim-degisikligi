@@ -10,7 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Birthstone&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../static/css/home.css" />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='css/home.css')}}"
+    />
     <link
       rel="icon"
       href="{{url_for('static', filename='img/climate-change-icon.ico')}}"
@@ -24,7 +27,7 @@
     <div class="container">
       <div class="gorsel-bilgi2" id="gb-1">
         <img
-          src="../static/img/roszie-climate-change-8405380_1920.png"
+          src="{{url_for('static', filename='img/roszie-climate-change-8405380_1920.png')}}"
           alt=""
           class="yan_gorsel1"
         />
@@ -42,7 +45,7 @@
       </div>
       <div class="gorsel-bilgi">
         <img
-          src="../static/img/environment.svg"
+          src="{{url_for('static', filename='img/environment.svg')}}"
           alt="environment"
           class="yan_gorsel1"
         />
@@ -97,7 +100,10 @@
         </h3>
       </div>
       <div class="game-box">
-        <img src="../static/img/paper_2.jpg" alt="formicon" />
+        <img
+          src="{{url_for('static',filename='img/paper_2.jpg')}}"
+          alt="formicon"
+        />
         <h3>
           Peki siz iklim değişikliğine ne kadar etki ettiğinizi biliyor musunuz?
         </h3>
@@ -108,8 +114,6 @@
           Forma git!
         </button>
       </div>
-      <div class="gorsel-bilgi"></div>
-      <div class="gorsel-bilgi"></div>
     </div>
     <script>
       document

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 - Bulunamadı</title>
+    <link
+      rel="icon"
+      href="{{url_for('static', filename='climate-change-icon')}}"
+    />
+    <link rel="stylesheet" href="../static/css/404.css" />
+  </head>
+  <body>
+    <div>
+      <img src="{{url_for('static', filename='img/404.png')}}" alt="404" />
+      <h2 id="yazi">Ziyaret ettiğiniz sayfa web sitemizde bulunamadı</h2>
+      <button type="button" onclick="history.back()">Geri Dön</button>
+    </div>
+
+    <script>
+      const yazi = document.getElementById("yazi");
+      let window_text =
+        window.location.href.length > 45
+          ? window.location.href.slice(0, 45) + "..."
+          : window.location.href;
+      yazi.innerHTML = `Ziyaret ettiğiniz "${window_text}" sayfası web sitemizde bulunamadı`;
+    </script>
+  </body>
+</html>
