@@ -11,6 +11,10 @@ header{
     justify-content: center;
     align-items: center;
 }
+body {
+    background:rgb(247, 250, 247);
+}
+
 header h1 {
     margin: 0;
     font-size: 120px;
@@ -167,6 +171,10 @@ body {
     }
 }
 @media screen and (max-width: 768px) {
+
+    html, body {
+        overflow-x: hidden;
+    }
 
     header{
         height:220px;

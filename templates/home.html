@@ -18,8 +18,32 @@
       rel="icon"
       href="{{url_for('static', filename='img/climate-change-icon.ico')}}"
     />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='css/top-bar.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
+    <div class="top-bar" id="top-bar">
+      <ul>
+        <li><a href="/">Ana Sayfa</a></li>
+        <li><a href="/iyi-kotu-oyun">İklim Değişikliği Oyunu</a></li>
+        <li><a href="{{url_for('form')}}">Karbon Ayak İzi Testi</a></li>
+        <li><a href="/about">Hakkımızda</a></li>
+      </ul>
+      <div class="container-button">
+        <button type="button" id="gizle">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+    </div>
     <header>
       <!-- <img src="../static/img/iklim_header.png" alt="iklim_header" /> -->
       <h1 id="br">İklim Değişikliği</h1>
@@ -101,7 +125,7 @@
       </div>
       <div class="game-box">
         <img
-          src="{{url_for('static',filename='img/paper_2.jpg')}}"
+          src="{{url_for('static',filename='img/paper_2-removebg-preview.png')}}"
           alt="formicon"
         />
         <h3>
@@ -126,6 +150,19 @@
           else if (len > 100) el.style.fontSize = "34px";
           else el.style.fontSize = "40px";
         });
+
+      const gizle = document.getElementById("gizle");
+      const topBar = document.getElementById("top-bar");
+      let topBar_closed = false;
+      gizle.addEventListener("click", () => {
+        topBar.classList.toggle("closed");
+        topBar_closed = !topBar_closed;
+        if (topBar_closed) {
+          gizle.querySelector("i").classList = "fa-solid fa-arrow-down";
+        } else {
+          gizle.querySelector("i").classList = "fa-solid fa-arrow-up";
+        }
+      });
     </script>
   </body>
 </html>

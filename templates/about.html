@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hakkımızda</title>
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='css/about.css')}}"
+    />
+    <link
+      rel="icon"
+      href="{{url_for('static', filename='img/climate-change-icon.ico')}}"
+    />
+  </head>
+  <body>
+    <section class="about">
+      <div class="about-container">
+        <div class="about-text">
+          <span class="about-subtitle">HAKKIMIZDA</span>
+
+          <h2>Gelecek İçin Birlikte Hareket Ediyoruz</h2>
+
+          <p>
+            İklim değişikliği artık geleceğin değil, bugünün en önemli
+            sorunlarından biridir. Bu proje, çevre bilincini artırmak,
+            sürdürülebilir yaşamı teşvik etmek ve herkesin kolayca
+            anlayabileceği bilgiler sunmak amacıyla hazırlanmıştır.
+          </p>
+
+          <p>
+            Küçük bireysel adımların büyük değişimlere dönüşebileceğine
+            inanıyoruz. Enerji tasarrufu yapmak, geri dönüşümü desteklemek, su
+            tüketimini azaltmak ve doğayı korumak hepimizin ortak
+            sorumluluğudur.
+          </p>
+          <div class="container">
+            <div class="about-cards">
+              <div class="card">
+                <h3>🌱 Misyonumuz</h3>
+                <p>
+                  Çevre bilincini yaygınlaştırmak ve insanları sürdürülebilir
+                  yaşam konusunda bilinçlendirmek.
+                </p>
+              </div>
+
+              <div class="card">
+                <h3>🌍 Vizyonumuz</h3>
+                <p>
+                  Gelecek nesillere daha yaşanabilir, temiz ve yeşil bir dünya
+                  bırakılmasına katkı sağlamak.
+                </p>
+              </div>
+            </div>
+            <button onclick="history.back()" type="button">Geri Dön</button>
+          </div>
+        </div>
+
+        <div class="about-image">
+          <img
+            src="{{url_for('static', filename='img/save-environment-illustration-concept-flat-illustration-isolated-on-white-background-vector.jpg')}}"
+            alt="Doğa"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="feedback">
+      <div class="feedback-container">
+        <h2>Geri Bildirim</h2>
+
+        <p>
+          Görüşleriniz bizim için çok değerli. Önerilerinizi, düşüncelerinizi
+          veya karşılaştığınız sorunları bizimle paylaşabilirsiniz.
+        </p>
+
+        <form class="feedback-form" action="/send" method="post">
+          <div class="input-group">
+            <label>Ad Soyad</label>
+            <input
+              type="text"
+              placeholder="Adınızı giriniz"
+              name="name"
+              id="name"
+              required
+            />
+          </div>
+
+          <div class="input-group">
+            <label>E-posta</label>
+            <input
+              type="email"
+              placeholder="E-posta adresiniz"
+              name="email"
+              id="email"
+              required
+            />
+          </div>
+
+          <div class="input-group">
+            <label>Mesajınız</label>
+            <textarea
+              rows="6"
+              placeholder="Geri bildiriminizi yazınız..."
+              name="feedback"
+              id="feedback"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit">Gönder</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
