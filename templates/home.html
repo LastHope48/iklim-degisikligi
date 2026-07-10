@@ -4,12 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>İklim Değişikliği - Ana Sayfa</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Birthstone&display=swap"
-      rel="stylesheet"
-    />
     <link
       rel="stylesheet"
       href="{{url_for('static', filename='css/home.css')}}"
@@ -22,6 +16,12 @@
       rel="stylesheet"
       href="{{url_for('static', filename='css/top-bar.css')}}"
     />
+
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='css/burger-bar.css')}}"
+    />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -44,9 +44,21 @@
         </button>
       </div>
     </div>
+    <div class="burger-bar" id="burger-bar">
+      <ul>
+        <li><a href="/">Ana Sayfa</a></li>
+        <li><a href="/iyi-kotu-oyun">İklim Değişikliği Oyunu</a></li>
+        <li><a href="{{url_for('form')}}">Karbon Ayak İzi Testi</a></li>
+        <li><a href="/about">Hakkımızda</a></li>
+      </ul>
+    </div>
     <header>
-      <!-- <img src="../static/img/iklim_header.png" alt="iklim_header" /> -->
       <h1 id="br">İklim Değişikliği</h1>
+      <button type="button" id="gizle-burger">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <p>Mehmet Serdar Eren</p>
+      <a href="#gb-1" class="btn">Okumaya Devam Et</a>
     </header>
     <div class="container">
       <div class="gorsel-bilgi2" id="gb-1">
@@ -153,7 +165,10 @@
 
       const gizle = document.getElementById("gizle");
       const topBar = document.getElementById("top-bar");
-      let topBar_closed = false;
+      const burger_gizle = document.getElementById("gizle-burger");
+      const burger_bar = document.getElementById("burger-bar");
+      let burgerBar_opened = false;
+      let topBar_opened = false;
       gizle.addEventListener("click", () => {
         topBar.classList.toggle("closed");
         topBar_closed = !topBar_closed;
@@ -161,6 +176,18 @@
           gizle.querySelector("i").classList = "fa-solid fa-arrow-down";
         } else {
           gizle.querySelector("i").classList = "fa-solid fa-arrow-up";
+        }
+      });
+      burger_gizle.addEventListener("click", () => {
+        burger_bar.classList.toggle("open");
+        burger_gizle.classList.toggle("open");
+        burgerBar_opened = !burgerBar_opened;
+        if (burgerBar_opened) {
+          burger_gizle.querySelector("i").classList = "fa-solid fa-arrow-left";
+          burger_gizle.querySelector("i").style.color = "black";
+        } else {
+          burger_gizle.querySelector("i").classList = "fa-solid fa-bars";
+          burger_gizle.querySelector("i").style.color = "white";
         }
       });
     </script>

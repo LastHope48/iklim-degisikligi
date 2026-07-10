@@ -1,249 +1,281 @@
-header{
-    height:400px;
-    background:
-        url("../img/iklim_header.png");
-    background-size:cover;
-    background-position:center;
-    color:white;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans.ttf");
+  font-weight: normal;
 }
+
+* {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 46rem;
+  background: url("../img/iklim_header.png");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header a {
+  text-decoration: none;
+}
+
 body {
-    background:rgb(247, 250, 247);
+  background: rgb(247, 250, 247);
+  font-size: 3.2rem;
+  line-height: 1.5;
+}
+
+.btn {
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  border: 1px solid #666;
+  padding: 1.6rem 3.2rem;
+  margin: 0.5rem 0;
+  transition: all 0.4s;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+html {
+  font-size: 10px;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 120px;
-    color: white;
-    text-align: center;
+  margin: 0;
+  padding: 12rem;
+  padding-bottom: 0;
+  text-align: center;
 }
 
 .yan_gorsel1 {
-    max-width: 600px;
-    margin: 0 20px 20px 20px;
-    display: inline-block;
+  max-width: 600px;
+  margin: 0 20px 20px 20px;
+  display: inline-block;
 }
 
-
 .gorsel-bilgi2 h3 {
-    font-family: Arial, Helvetica, sans-serif;
-    display: inline;
-    font-size: 40px;
-    font-weight: 400;
-    margin: 0 0 0 20px;
+  display: inline;
+  font-size: 40px;
+  font-weight: 400;
+  margin: 0 0 0 20px;
 }
 
 .gorsel-bilgi h3 {
-    font-family: Arial, Helvetica, sans-serif;
-    display: inline;
-    font-size: 40px;
-    font-weight: 400;
-    margin: 0 20px 0 0; 
+  display: inline;
+  font-size: 40px;
+  font-weight: 400;
+  margin: 0 20px 0 0;
 }
 
-
-
 #br {
-  font-family: "Birthstone", cursive;
   font-weight: 400;
   font-style: normal;
 }
 
 body {
-    margin: 0px;
+  margin: 0px;
 }
 
 .gorsel-bilgi {
-
-    max-height: 800px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 300px 0 0 0;
-    border-top: 2px solid rgba(128, 128, 128, 0.3);
-    border-left: 2px solid gray;
-    border-right: 2px solid gray;
-    border-bottom: 2px solid rgba(128, 128, 128, 0.3);
-    padding: 10px 0 10px 0;
+  max-height: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 300px 0 0 0;
+  border-top: 2px solid rgba(128, 128, 128, 0.3);
+  border-left: 2px solid gray;
+  border-right: 2px solid gray;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.3);
+  padding: 10px 0 10px 0;
 }
 
-
 .button {
-    width: 200px;
-    height: 50px;
-    border: none;
-    border-radius: 20px;
-    background-color: rgb(150, 150, 150);
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(150, 150, 150);
 }
 
 .button:hover {
-    background-color: gray;
-    transition: 0.2s;
+  background-color: gray;
+  transition: 0.2s;
 }
 
 .gorsel-bilgi2 {
-    max-height: 800px;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    margin: 300px 0 0 0;
-    border-left: 2px solid gray;
-    border-right: 2px solid gray; 
-    border-bottom: 2px solid rgba(128, 128, 128, 0.3);
-    border-top: 2px solid rgba(128, 128, 128, 0.3);
-    padding: 10px 0 10px 0;
+  max-height: 800px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin: 300px 0 0 0;
+  border-left: 2px solid gray;
+  border-right: 2px solid gray;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.3);
+  border-top: 2px solid rgba(128, 128, 128, 0.3);
+  padding: 10px 0 10px 0;
 }
 
-
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .game-box {
-    width: 50%;
-    max-height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  width: 50%;
+  max-height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .game-box h3 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    font-size: 30px;
+  font-weight: 400;
+  font-size: 30px;
 }
 
 .game-box img {
-    max-width: 400px;
+  max-width: 400px;
 }
 
 ::-webkit-scrollbar {
-    width: 0;
+  width: 0;
 }
 
 #gb-1 h3 {
-    font-size: 40px !important;
+  font-size: 40px !important;
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 375px) {
+  header {
+    height: 170px;
+  }
 
-    header{
-        height:170px;
-    }
+  header h1 {
+    font-size: 38px;
+  }
 
-    header h1{
-        font-size:38px;
-    }
+  .gorsel-bilgi,
+  .gorsel-bilgi2 {
+    margin-top: 35px;
+    padding: 15px;
+  }
 
-    .gorsel-bilgi,
-    .gorsel-bilgi2{
-        margin-top:35px;
-        padding:15px;
-    }
+  .gorsel-bilgi h3,
+  .gorsel-bilgi2 h3 {
+    font-size: 18px;
+  }
 
-    .gorsel-bilgi h3,
-    .gorsel-bilgi2 h3{
-        font-size:18px;
-    }
+  .game-box h3 {
+    font-size: 20px;
+  }
 
-    .game-box h3{
-        font-size:20px;
-    }
+  #gb-1 h3 {
+    font-size: 26px !important;
+  }
 
-    #gb-1 h3{
-        font-size:26px !important;
-    }
-
-    .button{
-        height:45px;
-        font-size:16px;
-    }
-    li {
-        margin-bottom: 20px;
-    }
+  .button {
+    height: 45px;
+    font-size: 16px;
+  }
+  li {
+    margin-bottom: 20px;
+  }
 }
 @media screen and (max-width: 768px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
 
-    html, body {
-        overflow-x: hidden;
-    }
+  header {
+    height: 220px;
+    padding: 20px;
+  }
 
-    header{
-        height:220px;
-        padding:20px;
-    }
+  .btn {
+    display: none;
+  }
 
-    header h1{
-        font-size:55px;
-        text-align:center;
-    }
+  header h1 {
+    font-size: 55px;
+    text-align: center;
+  }
 
-    .container{
-        padding:0 15px;
-    }
+  .container {
+    padding: 0 15px;
+  }
 
-    .gorsel-bilgi,
-    .gorsel-bilgi2{
-        flex-direction:column;
-        align-items:center;
-        justify-content:center;
-        margin:60px 10px 0;
-        text-align:center;
-        max-height:none;
-        padding:20px;
-    }
+  .gorsel-bilgi,
+  .gorsel-bilgi2 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 60px 10px 0;
+    text-align: center;
+    max-height: none;
+    padding: 20px;
+  }
 
-    .gorsel-bilgi h3,
-    .gorsel-bilgi2 h3{
-        display:block;
-        font-size:24px;
-        margin:20px 0;
-    }
+  .gorsel-bilgi h3,
+  .gorsel-bilgi2 h3 {
+    display: block;
+    font-size: 24px;
+    margin: 20px 0;
+  }
 
-    .yan_gorsel1{
-        width:100%;
-        max-width:100%;
-        margin:0;
-    }
+  .yan_gorsel1 {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
 
-    .yan_gorsel1 img,
-    .game-box img{
-        width:100%;
-        max-width:100%;
-        height:auto;
-        display:block;
-    }
+  .yan_gorsel1 img,
+  .game-box img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
 
-    .game-box{
-        width:100%;
-        max-height:none;
-        padding:20px 0;
-    }
+  .game-box {
+    width: 100%;
+    max-height: none;
+    padding: 20px 0;
+  }
 
-    .game-box h3{
-        font-size:24px;
-        text-align:center;
-    }
+  .game-box h3 {
+    font-size: 24px;
+    text-align: center;
+  }
 
-    #gb-1 h3{
-        font-size:32px !important;
-    }
+  #gb-1 h3 {
+    font-size: 32px !important;
+  }
 
-    .button{
-        width:100%;
-        max-width:280px;
-        height:50px;
-        font-size:18px;
-    }
-        li {
-        margin-bottom: 20px;
-    }
+  .button {
+    width: 100%;
+    max-width: 280px;
+    height: 50px;
+    font-size: 18px;
+  }
+  li {
+    margin-bottom: 20px;
+  }
 }

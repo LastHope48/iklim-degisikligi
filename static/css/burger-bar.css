@@ -1,0 +1,94 @@
+.burger-bar {
+  display: none;
+}
+#gizle-burger {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  .burger-bar {
+    position: fixed;
+    top: 0;
+    left: -60%;
+    width: 60%;
+    background: rgb(0, 0, 0);
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.4s ease;
+    z-index: 1000;
+  }
+  .burger-bar.open {
+    transform: translateX(100%);
+  }
+
+  .burger-bar ul {
+    position: absolute;
+    left: 30%;
+    margin-left: -50px;
+    list-style: none;
+    color: white;
+  }
+
+  .burger-bar ul li {
+    font-size: 12px;
+    padding: 20px;
+    color: white;
+  }
+
+  a {
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+    border-left: 2px solid white;
+    padding: 10px;
+    height: 50px;
+    margin: 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 130px;
+  }
+
+  a::before {
+    content: "";
+    position: absolute;
+
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+
+    background: rgb(255, 255, 255);
+    transition: 0.3s;
+    z-index: 1000;
+  }
+
+  a:hover::before {
+    width: 100%;
+  }
+
+  #gizle-burger {
+    display: block;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    background: black;
+    border: none;
+    z-index: 1001;
+  }
+
+  #gizle-burger.open {
+    background: white;
+  }
+
+  #gizle-burger i {
+    font-size: 20px;
+    color: white;
+  }
+}
